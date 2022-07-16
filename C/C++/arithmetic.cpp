@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
+// Template classes are used to create generic classes
 template <class T>
 class Arithmetic
 {
-private:
+private: // Data members are declared private
     /* data */
     T a;
     T b;
 
-public:
+public: // Methods are declared as public to be accessible from anywhere
     Arithmetic(/* args */ T a, T b);
     ~Arithmetic();
 
@@ -25,7 +26,7 @@ public:
 };
 
 template <class T>
-Arithmetic<T>::Arithmetic(/* args */ T a, T b)
+Arithmetic<T>::Arithmetic(/* args */ T a, T b) // :: Scope Resolution
 {
     this->a = a;
     this->b = b;
