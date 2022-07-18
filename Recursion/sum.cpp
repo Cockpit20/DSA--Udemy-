@@ -7,6 +7,8 @@ int sum(int n)
     return 1;
     return n+sum(n-1);
 }
+// Time Complexity: O(N)
+// Space Complexity: O(N)
 
 int main()
 {
