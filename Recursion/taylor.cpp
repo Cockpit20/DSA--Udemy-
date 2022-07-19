@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
 
-float power(float x, float n)
+double power(double x, double n)
 {
     if (n == 0)
         return 1;
     return x * power(x, n - 1);
 }
 
-float fact(float n)
+double fact(double n)
 {
     if (n == 1 || n == 0)
         return 1;
     return n * fact(n - 1);
 }
 
-float e(float x, float n)
+double e(double x, double n)
 {
     if (n == 0)
         return 1;
